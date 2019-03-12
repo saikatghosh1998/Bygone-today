@@ -1,0 +1,31 @@
+.con{
+    background-color:#EAF0F1;
+    height: 100vh;
+}
+.jumbotron{
+    background-color:#1287A5;
+    color: aliceblue;
+    text-align: center;
+    
+}
+.search{
+    text-align: center;
+}
+
+
+.btn-success:hover {
+color: #212529;
+background-color:#1287A5;
+border-color:#1287A5;
+
+}
+.btn-success {
+color: #fff;
+background-color:#1287A5;
+border-color:#1287A5;
+}
+
+.nav-link{
+
+font-size: 20px !important;
+}
