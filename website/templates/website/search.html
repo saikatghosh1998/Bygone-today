@@ -2,7 +2,13 @@
 {% load static%}
  
         {% block content %}
+       
         <div class="container con">
-           <h4> {{form}}</h4>
-        </div>
+            <div></div>
+        {% for d in detail %}
+         <ul>
+           <li> {{d}}</li>
+         </ul>
+        {% endfor %}
+      </div>
         {% endblock content %}
