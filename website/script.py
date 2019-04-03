@@ -9,9 +9,11 @@ def date(a):
     soup = bs(html.content,'lxml')
    
     container = soup.find('div', {'class':'mw-content-ltr'})
-    alList = container.findAll('h2')[2].findNext('ul')
+    alList = container.findAll('h2')
     x=[]
-    data=alList.findAll("li")
+    for a in alList:
+        if a.find(text='Events'):
+            data = a.findNext('ul').findAll("li")
     for d in data:
         x.append(d.text)
 
